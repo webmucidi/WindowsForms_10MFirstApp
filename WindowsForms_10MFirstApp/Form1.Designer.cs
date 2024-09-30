@@ -32,12 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdSoyad = new System.Windows.Forms.TextBox();
             this.labelAdSoyad = new System.Windows.Forms.Label();
-            this.listBoxArsiv = new System.Windows.Forms.ListBox();
+            this.listBoxOgretmen = new System.Windows.Forms.ListBox();
             this.comboBoxMeslek = new System.Windows.Forms.ComboBox();
             this.labelMeslek = new System.Windows.Forms.Label();
             this.labelYas = new System.Windows.Forms.Label();
             this.textBoxYas = new System.Windows.Forms.TextBox();
             this.labelSonuc = new System.Windows.Forms.Label();
+            this.listBoxIdareciler = new System.Windows.Forms.ListBox();
+            this.listBoxPersonel = new System.Windows.Forms.ListBox();
+            this.listBoxOgrenciler = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonBaslat
@@ -78,22 +81,22 @@
             this.labelAdSoyad.TabIndex = 3;
             this.labelAdSoyad.Text = "Ad-Soyad giriniz:";
             // 
-            // listBoxArsiv
+            // listBoxOgretmen
             // 
-            this.listBoxArsiv.FormattingEnabled = true;
-            this.listBoxArsiv.Location = new System.Drawing.Point(367, 28);
-            this.listBoxArsiv.Name = "listBoxArsiv";
-            this.listBoxArsiv.Size = new System.Drawing.Size(218, 420);
-            this.listBoxArsiv.TabIndex = 4;
+            this.listBoxOgretmen.FormattingEnabled = true;
+            this.listBoxOgretmen.Location = new System.Drawing.Point(367, 28);
+            this.listBoxOgretmen.Name = "listBoxOgretmen";
+            this.listBoxOgretmen.Size = new System.Drawing.Size(218, 186);
+            this.listBoxOgretmen.TabIndex = 4;
             // 
             // comboBoxMeslek
             // 
             this.comboBoxMeslek.FormattingEnabled = true;
             this.comboBoxMeslek.Items.AddRange(new object[] {
-            "Öğretmen",
-            "Futbolcu",
-            "Fenomen",
-            "Şarkıcı"});
+            "Öğretmen - 0",
+            "İdareci - 1",
+            "Personel -2",
+            "Öğrenci -3"});
             this.comboBoxMeslek.Location = new System.Drawing.Point(122, 70);
             this.comboBoxMeslek.Name = "comboBoxMeslek";
             this.comboBoxMeslek.Size = new System.Drawing.Size(121, 21);
@@ -133,17 +136,44 @@
             this.labelSonuc.TabIndex = 9;
             this.labelSonuc.Text = "Sonuç:";
             // 
+            // listBoxIdareciler
+            // 
+            this.listBoxIdareciler.FormattingEnabled = true;
+            this.listBoxIdareciler.Location = new System.Drawing.Point(694, 28);
+            this.listBoxIdareciler.Name = "listBoxIdareciler";
+            this.listBoxIdareciler.Size = new System.Drawing.Size(218, 186);
+            this.listBoxIdareciler.TabIndex = 4;
+            // 
+            // listBoxPersonel
+            // 
+            this.listBoxPersonel.FormattingEnabled = true;
+            this.listBoxPersonel.Location = new System.Drawing.Point(367, 251);
+            this.listBoxPersonel.Name = "listBoxPersonel";
+            this.listBoxPersonel.Size = new System.Drawing.Size(218, 186);
+            this.listBoxPersonel.TabIndex = 4;
+            // 
+            // listBoxOgrenciler
+            // 
+            this.listBoxOgrenciler.FormattingEnabled = true;
+            this.listBoxOgrenciler.Location = new System.Drawing.Point(694, 251);
+            this.listBoxOgrenciler.Name = "listBoxOgrenciler";
+            this.listBoxOgrenciler.Size = new System.Drawing.Size(218, 186);
+            this.listBoxOgrenciler.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 493);
+            this.ClientSize = new System.Drawing.Size(1025, 563);
             this.Controls.Add(this.labelSonuc);
             this.Controls.Add(this.textBoxYas);
             this.Controls.Add(this.labelYas);
             this.Controls.Add(this.labelMeslek);
             this.Controls.Add(this.comboBoxMeslek);
-            this.Controls.Add(this.listBoxArsiv);
+            this.Controls.Add(this.listBoxOgrenciler);
+            this.Controls.Add(this.listBoxPersonel);
+            this.Controls.Add(this.listBoxIdareciler);
+            this.Controls.Add(this.listBoxOgretmen);
             this.Controls.Add(this.labelAdSoyad);
             this.Controls.Add(this.textBoxAdSoyad);
             this.Controls.Add(this.label1);
@@ -161,12 +191,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxAdSoyad;
         private System.Windows.Forms.Label labelAdSoyad;
-        private System.Windows.Forms.ListBox listBoxArsiv;
+        private System.Windows.Forms.ListBox listBoxOgretmen;
         private System.Windows.Forms.ComboBox comboBoxMeslek;
         private System.Windows.Forms.Label labelMeslek;
         private System.Windows.Forms.Label labelYas;
         private System.Windows.Forms.TextBox textBoxYas;
         private System.Windows.Forms.Label labelSonuc;
+        private System.Windows.Forms.ListBox listBoxIdareciler;
+        private System.Windows.Forms.ListBox listBoxPersonel;
+        private System.Windows.Forms.ListBox listBoxOgrenciler;
     }
 }
 
